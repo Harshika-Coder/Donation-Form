@@ -33,7 +33,7 @@ h1 {
 
 .qr-section img {
   width: 200px;
-  height: auto;
+  height: 100%;
   margin-top: 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
