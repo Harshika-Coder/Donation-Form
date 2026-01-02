@@ -8,10 +8,90 @@
   <body>
     <header>
       <h1>Donation Form</h1>
-      <p>Your kindness is someone's lifeline.</p>
+      <span>Your kindness is someone's lifeline.</span>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
     </header>
     <hr />
-    <main></main>
+    <main>
+      <section>
+        <div class="about">
+          <aside>
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.qGL7axtdPb8LOjlC2SeqpgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Image"
+              height="100px"
+            />
+          </aside>
+          <article>
+            <b>About the case</b>
+            <p>
+              Some text about the medical emergency case goes here.In a world
+              where challenges often feel overwhelming, donations—big or
+              small—hold the power to spark hope and transform lives. Giving is
+              more than a financial act; it's a bridge between compassion and
+              action. When you donate, you're not just offering money—you're
+              investing in someone's future. Your contribution can help a child
+              access education, provide food to a hungry family, support medical
+              treatment for the sick, or protect the environment for generations
+              to come.
+            </p>
+          </article>
+        </div>
+        <br />
+        <form action="donate">
+          Name:
+          <input
+            type="text"
+            name="name"
+            placeholder="Donor Name"
+            id="name"
+            required
+          />
+          <br />
+          Email:
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Your Email Id"
+            id="email"
+            required
+          />
+          <br />
+          Amount:
+          <button type="button" value="Donate" onclick="updateAAmount(50)">
+            Rs.50
+          </button>
+          <button type="button" value="Donate" onclick="updateAAmount(100)">
+            Rs.100
+          </button>
+          <button type="button" value="Donate" onclick="updateAAmount(500)">
+            Rs.500
+          </button>
+          <br />
+          <p>Or Enter your own Amount.</p>
+          <input
+            type="number"
+            name="amount"
+            placeholder="Enter the amount"
+            oninput="updateAAmount(this.value)"
+            required
+          />
+          <br />
+          <button type="submit" value="Donate">Donate Now</button>
+        </form>
+      </section>
+      <br />
+      <section>
+        <div class="contact">
+          <h4>If required you can Contact Us</h4>
+          Call us: 12345675678 <br />
+          Email us: email@com
+        </div>
+      </section>
+    </main>
     <hr />
     <footer>Thank you for your support. &hearts;</footer>
   </body>
